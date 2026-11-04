@@ -1,0 +1,74 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO level_up_shifter
+  CLASS BLOCK ;
+  FOREIGN level_up_shifter ;
+  ORIGIN 3.880 11.335 ;
+  SIZE 17.120 BY 27.255 ;
+  PIN A
+    ANTENNAGATEAREA 0.260000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 7.110 -7.350 8.210 -4.900 ;
+    END
+  END A
+  PIN B
+    ANTENNAGATEAREA 2.000000 ;
+    ANTENNADIFFAREA 4.080000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 5.520 1.925 5.960 5.885 ;
+    END
+  END B
+  PIN VDD1
+    ANTENNAGATEAREA 0.260000 ;
+    ANTENNADIFFAREA 9.780000 ;
+    PORT
+      LAYER Metal4 ;
+        RECT -3.780 -11.260 13.140 -9.260 ;
+    END
+  END VDD1
+  PIN VDD2
+    ANTENNAGATEAREA 1.500000 ;
+    ANTENNADIFFAREA 18.170000 ;
+    PORT
+      LAYER Metal4 ;
+        RECT -3.780 7.995 13.140 9.995 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT -3.780 13.920 13.140 15.920 ;
+    END
+  END VDD2
+  PIN VSS
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT -3.780 -2.975 13.140 1.025 ;
+    END
+  END VSS
+  OBS
+      LAYER GatPoly ;
+        RECT -3.750 -11.095 13.110 14.970 ;
+      LAYER Metal1 ;
+        RECT -3.750 -11.095 13.110 14.970 ;
+      LAYER Metal2 ;
+        RECT -2.475 6.095 11.835 14.945 ;
+        RECT -2.475 1.715 5.310 6.095 ;
+        RECT 6.170 1.715 11.835 6.095 ;
+        RECT -2.475 -4.690 11.835 1.715 ;
+        RECT -2.475 -7.560 6.900 -4.690 ;
+        RECT 8.420 -7.560 11.835 -4.690 ;
+        RECT -2.475 -11.045 11.835 -7.560 ;
+      LAYER Metal3 ;
+        RECT -2.475 -11.045 11.835 14.945 ;
+      LAYER Metal4 ;
+        RECT -1.595 10.205 13.140 13.710 ;
+        RECT -1.595 1.235 13.140 7.785 ;
+        RECT -1.595 -9.050 13.140 -3.185 ;
+  END
+END level_up_shifter
+END LIBRARY
+

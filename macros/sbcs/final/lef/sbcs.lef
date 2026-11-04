@@ -1,0 +1,96 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sbcs
+  CLASS BLOCK ;
+  FOREIGN sbcs ;
+  ORIGIN 33.855 61.390 ;
+  SIZE 99.485 BY 149.360 ;
+  PIN en
+    ANTENNAGATEAREA 45.000000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.035 12.890 0.835 13.690 ;
+    END
+    PORT
+      LAYER Metal2 ;
+        RECT 0.035 50.230 0.835 51.030 ;
+    END
+  END en
+  PIN enb
+    ANTENNAGATEAREA 112.500000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT -1.015 12.890 -0.215 13.690 ;
+    END
+    PORT
+      LAYER Metal2 ;
+        RECT -1.015 51.895 5.820 52.695 ;
+    END
+  END enb
+  PIN avdd
+    ANTENNADIFFAREA 173.519989 ;
+    PORT
+      LAYER Metal4 ;
+        RECT 4.290 13.290 8.290 87.730 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 4.290 -61.150 8.290 13.050 ;
+    END
+  END avdd
+  PIN avss
+    ANTENNADIFFAREA 199.209595 ;
+    PORT
+      LAYER Metal4 ;
+        RECT 28.530 13.290 32.530 87.730 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 28.530 -61.150 32.530 13.050 ;
+    END
+  END avss
+  PIN ion
+    ANTENNADIFFAREA 12.240000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 60.355 12.890 65.630 13.690 ;
+    END
+  END ion
+  PIN iop
+    ANTENNADIFFAREA 12.240000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 58.540 13.925 65.630 14.725 ;
+    END
+  END iop
+  OBS
+      LAYER GatPoly ;
+        RECT 0.240 -61.150 64.090 87.730 ;
+      LAYER Metal1 ;
+        RECT 0.240 -61.150 64.090 87.730 ;
+      LAYER Metal2 ;
+        RECT -18.875 52.905 62.040 87.425 ;
+        RECT -18.875 51.685 -1.225 52.905 ;
+        RECT 6.030 51.685 62.040 52.905 ;
+        RECT -18.875 51.240 62.040 51.685 ;
+        RECT -18.875 50.020 -0.175 51.240 ;
+        RECT 1.045 50.020 62.040 51.240 ;
+        RECT -18.875 14.935 62.040 50.020 ;
+        RECT -18.875 13.715 58.330 14.935 ;
+        RECT -18.875 12.680 60.145 13.715 ;
+        RECT -18.875 -60.845 62.040 12.680 ;
+      LAYER Metal3 ;
+        RECT -33.690 13.900 62.040 87.425 ;
+        RECT -33.690 12.680 -1.225 13.900 ;
+        RECT 1.045 12.680 62.040 13.900 ;
+        RECT -33.690 -60.845 62.040 12.680 ;
+      LAYER Metal4 ;
+        RECT -33.855 -61.150 4.080 87.730 ;
+        RECT 8.500 -61.150 28.320 87.730 ;
+        RECT 32.740 -61.150 57.635 87.730 ;
+  END
+END sbcs
+END LIBRARY
+

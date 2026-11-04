@@ -1,0 +1,40 @@
+drc_run_*
+lvs_run_*
+drc_*.tcl
+ext_*.tcl
+pex_*.tcl
+*.vcd
+*.raw
+*.log
+*.pyc
+*.ext
+*.lyrdb
+.DS_Store
+__pycache__/
+runs/
+backups/
+sim_build/
+
+# Build-generated reports and intermediate netlists (regenerate via `make`),
+# at the top level and inside every macro.
+/netlist/
+/verification/
+/render/
+macros/*/netlist/
+macros/*/verification/
+macros/*/render/
+
+# Simulation outputs, at the top level and inside every macro.
+**/xschem/simulations/
+**/plot_simulations/data/
+**/plot_simulations/figures/
+**/plot_simulations/__pycache__/
+
+# CACE run outputs.
+**/cace/_runs/
+**/cace/_docs/
+**/cace/netlist/
+**/cace/templates/simulations/
+
+macros/counter/flow/final
+macros/counter/fpga/*/build/
