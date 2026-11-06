@@ -54,7 +54,7 @@ C {devices/iopin.sym} 440 -450 2 1 {name=pip lab=iop}
 C {devices/iopin.sym} 440 -430 2 1 {name=pim lab=ion}
 C {devices/ipin.sym} 320 -250 2 1 {name=pen lab=en}
 C {devices/ipin.sym} 320 -230 2 1 {name=penb lab=enb}
-C {sbcs_slice.sym} 340 -130 0 0 {name=Xslice[1:0]}
+C {sbcs_slice.sym} 340 -130 0 0 {name=Xslice[7:0]}
 C {devices/lab_pin.sym} 320 -190 0 0 {name=p1 sig_type=std_logic lab=bp0}
 C {devices/lab_pin.sym} 320 -170 0 0 {name=p2 sig_type=std_logic lab=bp}
 C {devices/lab_pin.sym} 320 -150 0 0 {name=p3 sig_type=std_logic lab=bn}
